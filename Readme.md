@@ -3,6 +3,8 @@ Some PHP Codes
 
 #### PHP Enum Yapısı
 ```php
+
+// PHP Version : 8.1
 enum HttpStatusCode: int {
         case Ok = 200;
         case Created = 201;
