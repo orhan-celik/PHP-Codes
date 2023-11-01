@@ -1,3 +1,8 @@
+# Some PHP Codes
+Some PHP Codes
+
+#### PHP Enum Yapısı
+~~~ ssh
 enum HttpStatusCode: int {
         case Ok = 200;
         case Created = 201;
@@ -20,3 +25,5 @@ enum HttpStatusCode: int {
     }
 
     echo HttpStatusCode::Created->message();
+
+~~~
