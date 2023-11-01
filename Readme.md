@@ -2,12 +2,6 @@
 Some PHP Codes
 
 #### PHP Enum Yapısı
-~~~ ssh
-
-
-~~~
-
-
 ```php
 enum HttpStatusCode: int {
         case Ok = 200;
