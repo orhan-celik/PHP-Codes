@@ -3,6 +3,12 @@ Some PHP Codes
 
 #### PHP Enum Yapısı
 ~~~ ssh
+
+
+~~~
+
+
+```php
 enum HttpStatusCode: int {
         case Ok = 200;
         case Created = 201;
@@ -10,7 +16,7 @@ enum HttpStatusCode: int {
         case Forbidden = 403;
         case LargeHeaders = 431;
         case InternalServerError = 500;
-
+        
         public function message(): string
         {
             return match($this){
@@ -22,15 +28,7 @@ enum HttpStatusCode: int {
                 self::InternalServerError => 'Internal Server Error'
             };
         }
-    }
+}
 
-    echo HttpStatusCode::Created->message();
-
-~~~
-
-
-```php
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+echo HttpStatusCode::Created->message();
 ```
